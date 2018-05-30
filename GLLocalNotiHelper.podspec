@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 s.name              = "GLLocalNotiHelper"
 
 #更新代码必须修改版本号
-s.version           = "0.0.1"
+s.version           = "0.0.2"
 s.summary           = "Manage local notifications for ios."
 s.description       = <<-DESC
 It is a GLLocalNotiHelper used on iOS, which implement by Objective-C.
@@ -24,6 +24,11 @@ s.subspec 'GLLocalNotiHelper' do |ss|
 ss.source_files = 'GLLocalNotiHelper/GLLocalNotiHelper/*.{h,m}'
 ss.public_header_files = 'GLLocalNotiHelper/GLLocalNotiHelper/*.h'
 end
+
+#子模块image(存放声音)
+#s.subspec 'source' do |ss|
+#ss.resources = 'GLLocalNotiHelper/source/*.caf'
+#end
 
 s.frameworks = 'Foundation', 'UIKit'
 #引用了第三方库
